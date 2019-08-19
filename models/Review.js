@@ -1,18 +1,13 @@
 const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
-const ListingSchema = new Schema({
-    active: false,
+const ReviewSchema = new Schema({
+    rating: Number,
+    comment: String,
     host: [
         {
             type: Schema.Types.ObjectId,
             ref: "Host"
-        }
-    ],
-    review: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: "Review"
         }
     ],
     guest: [
@@ -24,4 +19,4 @@ const ListingSchema = new Schema({
 
 });
 
-module.exports = mongoose.model("Listing", ListingSchema)
+module.exports = mongoose.model("Review", ReviewSchema)
