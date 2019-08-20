@@ -11,9 +11,9 @@ const UserSchema = new Schema({
     phone: Number,
     email: String,
     username: String,
-    address: {
+    location: {
         city: String,
-        street: String,
+        address: String,
         zipCode: Number
     },
     reviews: [

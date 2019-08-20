@@ -15,8 +15,18 @@
         "age": 26,
         "licensePlate": "SYNTXERR",
         "carType": "Nissan GT-R",
-        "phone": 0987654321,
+        "phone": 1112223333,
         "email": "Rojo@gmail.com",
         "username": "DonRojo"
+    },
+    {
+        "firstName": "Betty",
+        "lastName": "White",
+        "age": 25,
+        "licensePlate": "SYNTXERR",
+        "carType": "Bugatti Veyron",
+        "phone": 2223334444,
+        "email": "BWhite@gmail.com",
+        "username": "BWhite"
     }
 ]

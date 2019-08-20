@@ -2,7 +2,13 @@ const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
 const ListingSchema = new Schema({
-    active: false,
+    active: Boolean,
+    location: {
+        city: String,
+        address: String,
+        zipCode: Number
+    },
+    rate: Number,
     host: [
         {
             type: Schema.Types.ObjectId,

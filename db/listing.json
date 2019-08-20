@@ -1,33 +1,32 @@
 [
     {
-        "firstName": "Samuel",
-        "lastName": "Shobowale",
-        "averageRating": 3.5,
+        "active": "true",
         "location": {
             "city": "Washington, D.C.",
             "address": "123 7th street NW",
             "zipCode": 20004
-        }
+        },
+        "rate": 15
     },
+
     {
-        "firstName": "LeBron",
-        "lastName": "James",
-        "averageRating": 4.5,
+        "active": "true",
         "location": {
             "city": "Los Angeles, CA",
             "address": "123 main st.",
             "zipCode": 90001
-        }
+        },
+        "rate": 16
     },
+
     {
-        "firstName": "Michael",
-        "lastName": "Scott",
-        "averageRating": 1.5,
+        "active": "true",
         "location": {
             "city": "Scranton, PA",
             "address": "456 paper rd.",
             "zipCode": 18503
-        }
+        },
+        "rate": 13
     }
     
 ]
