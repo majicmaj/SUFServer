@@ -1,0 +1,13 @@
+[
+    {
+        "firstName": "Samuel",
+        "lastName": "Shobowale",
+        "averageRating": 3.5,
+        "address": {
+            "city": "Washington, D.C.",
+            "street": "123 7th street NW",
+            "zipCode": 20004
+        }
+    }
+    
+]

@@ -5,8 +5,8 @@ module.exports = {
 
     create: (req, res) => Review.create(req.body).then(reviews => res.json(reviews)),
 
-    showByMessage: (req, res) => Review.findOne({ message: req.params.message})
-    .then(review => res.json(review)),
+    // showByMessage: (req, res) => Review.findOne({ message: req.params.message})
+    // .then(review => res.json(review)),
 
     showByID: (req, res) => Review.findById({ _id: req.params.id})
     .then(review => res.json(review)),

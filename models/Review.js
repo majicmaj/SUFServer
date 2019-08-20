@@ -7,13 +7,13 @@ const ReviewSchema = new Schema({
     host: [
         {
             type: Schema.Types.ObjectId,
-            ref: "Host"
+            ref: "User"
         }
     ],
     guest: [
         {
             type: Schema.Types.ObjectId,
-            ref: "Guest"
+            ref: "User"
         }
     ]
 

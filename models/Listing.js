@@ -6,7 +6,7 @@ const ListingSchema = new Schema({
     host: [
         {
             type: Schema.Types.ObjectId,
-            ref: "Host"
+            ref: "User"
         }
     ],
     review: [
@@ -18,7 +18,7 @@ const ListingSchema = new Schema({
     guest: [
         {
             type: Schema.Types.ObjectId,
-            ref: "Guest"
+            ref: "User"
         }
     ]
 
