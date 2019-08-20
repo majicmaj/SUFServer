@@ -1,0 +1,22 @@
+[
+    {
+        "firstName": "Maj",
+        "lastName": "Tarabein",
+        "age": 21,
+        "licensePlate": "Mac User",
+        "carType": "Tesla Model X",
+        "phone": 1234567890,
+        "email": "Majito@gmail.com",
+        "username": "Majito"
+    },
+    {
+        "firstName": "Ashtin",
+        "lastName": "Latting",
+        "age": 26,
+        "licensePlate": "SYNTXERR",
+        "carType": "Nissan GT-R",
+        "phone": 0987654321,
+        "email": "Rojo@gmail.com",
+        "username": "DonRojo"
+    }
+]
