@@ -10,6 +10,7 @@ const UserSchema = new Schema({
     carType: String,
     phone: Number,
     email: String,
+    password: String,
     username: String,
     location: {
         city: String,

@@ -7,6 +7,7 @@
         "carType": "Tesla Model X",
         "phone": 1234567890,
         "email": "Majito@gmail.com",
+        "password": "Majito123",
         "username": "Majito"
     },
     {
@@ -17,6 +18,7 @@
         "carType": "Nissan GT-R",
         "phone": 1112223333,
         "email": "Rojo@gmail.com",
+        "password": "Ashtin123",
         "username": "DonRojo"
     },
     {
@@ -27,6 +29,7 @@
         "carType": "Bugatti Veyron",
         "phone": 2223334444,
         "email": "BWhite@gmail.com",
+        "password": "Betty123",
         "username": "BWhite"
     }
 ]
