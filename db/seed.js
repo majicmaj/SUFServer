@@ -1,6 +1,20 @@
 const Listing = require("../models/Listing")
 const Review = require("../models/Review")
 const User = require("../models/User")
+const listings = require("./listing.json");
+const reviews = require("./review.json");
+const users = require("./guest.json");
+const users2 = require("./host.json");
+
+// const listingArray = listings.map(singleListing => {
+//     const newListing = {};
+//     (newListing.active = singleListing.active),
+//     (newListing.location = singleListing.location),
+//     (newListing.rate = singleListing.rate);
+//     return newListing
+// })
+
+
 
 Listing.find({}).remove(() =>
   Listing.collection
@@ -29,6 +43,15 @@ User.find({}).remove(() =>
     .insert(users)
     .then(users => {
       console.log(users);
+    })
+    .catch(err => {
+      console.log(err);
+    }),
+
+    User.collection
+    .insert(users2)
+    .then(users2 => {
+      console.log(users2);
     })
     .catch(err => {
       console.log(err);
