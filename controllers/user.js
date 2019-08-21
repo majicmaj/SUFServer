@@ -5,8 +5,8 @@ module.exports = {
 
     create: (req, res) => User.create(req.body).then(users => res.json(users)),
 
-    // showByMessage: (req, res) => User.findOne({ message: req.params.message})
-    // .then(user => res.json(user)),
+    showByEmail: (req, res) => User.findOne({ email: req.params.email})
+    .then(user => res.json(user)),
 
     showByID: (req, res) => User.findById({ _id: req.params.id})
     .then(user => res.json(user)),

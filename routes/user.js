@@ -9,7 +9,7 @@ const User = mongoose.model("User");
 
 router.get("/", userController.index);
 router.post("/", userController.create);
-// router.get("/message: message", userController.showByMessage);
+router.get("/email: email", userController.showByEmail);
 router.get("/id: id", userController.showByID);
 router.put("/:id", userController.update);
 router.delete("/:id", userController.destroy);

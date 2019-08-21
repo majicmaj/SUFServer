@@ -6,15 +6,6 @@ const reviews = require("./review.json");
 const users = require("./guest.json");
 const users2 = require("./host.json");
 
-// const listingArray = listings.map(singleListing => {
-//     const newListing = {};
-//     (newListing.active = singleListing.active),
-//     (newListing.location = singleListing.location),
-//     (newListing.rate = singleListing.rate);
-//     return newListing
-// })
-
-
 
 Listing.find({}).remove(() =>
   Listing.collection
