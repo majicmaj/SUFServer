@@ -1,9 +1,11 @@
 const express = require("express");
 const parser = require("body-parser");
 const app = express();
-const passport = require("./config/passport")()
-const userRouter = require("./routes/user")
+const passport = require("./config/passport")();
+const userRouter = require("./routes/user");
+const cors = require("cors");
 
+app.use(cors());
 
 app.use(passport.initialize())
 app.use(parser.json());
