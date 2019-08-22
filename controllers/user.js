@@ -6,7 +6,7 @@ module.exports = {
     create: (req, res) => User.create(req.body).then(users => res.json(users)),
 
     showByEmail: (req, res) => User.findOne({ email: req.params.email})
-    .then(user => res.json(user)),
+    .then(user => res.json(user)).catch(err=>res.send(err)),
 
     showByID: (req, res) => User.findById({ _id: req.params.id})
     .then(user => res.json(user)),
