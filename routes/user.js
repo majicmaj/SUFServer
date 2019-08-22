@@ -22,9 +22,12 @@ router.post('/signup', (req, res) => {
         password: req.body.password,
         firstName: req.body.firstName,
         lastName: req.body.lastName,
-        location: req.body.location,
+        location: {
+          address: req.body.address,
+          city: req.body.city,
+          zipcode: req.body.zipcode
+        },
         username: req.body.username,
-        carType: req.body.carType
 
       }
       User.findOne({ email: req.body.email })
