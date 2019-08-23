@@ -14,10 +14,15 @@ module.exports = {
     update: (req, res) => User.findOneAndUpdate({_id: req.params.id },req.body)
     .then(user => res.json(user)),
 
-    destroy: (req, res) => User.findByIdAndRemove(req.params.id).then(user => {
-        res.send(user);
-    })
+    updateByEmail: (req, res) => User.findOneAndUpdate({ email: req.params.email },req.body)
+    .then(user => res.json(user)),
+
+    destroy: (req, res) => User.findByIdAndRemove({ _id: req.params.id}).then(user => 
+        res.send(user)),
+
+    destroyByEmail: (req, res) => User.findByIdAndRemove({ _id: req.params.id}).then(user => 
+        res.send(user))
+    }
 
 
-};
 

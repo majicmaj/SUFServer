@@ -12,7 +12,10 @@ router.post("/", userController.create);
 router.get("/email/:email", userController.showByEmail);
 router.get("/id: id", userController.showByID);
 router.put("/:id", userController.update);
+router.put("/email/:email", userController.updateByEmail);
 router.delete("/:id", userController.destroy);
+router.delete("/email/:email", userController.destroyByEmail);
+
 
 //authentication
 router.post('/signup', (req, res) => {

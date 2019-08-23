@@ -10,5 +10,4 @@ router.put("/:id", listingController.update);
 router.delete("/:id", listingController.destroy);
 
 
-
 module.exports = router;
