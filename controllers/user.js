@@ -20,7 +20,7 @@ module.exports = {
     destroy: (req, res) => User.findByIdAndRemove({ _id: req.params.id}).then(user => 
         res.send(user)),
 
-    destroyByEmail: (req, res) => User.findByIdAndRemove({ email: req.params.email}).then(user => 
+    destroyByEmail: (req, res) => User.findAndRemove({ email: req.params.email}).then(user => 
         res.send(user))
     }
 
